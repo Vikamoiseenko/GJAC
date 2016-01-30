@@ -1,0 +1,61 @@
+<!-- Begin site inform -->
+<footer class="row-footer">
+<div id="menu-footer" class="col-lg-12 col-md-12 col-xs-12">
+<div class="col-lg-12 col-xs-12 col-sm-12">
+<div id="logo-footer" >
+<a class="navbar-brand" href="<?php echo get_settings('home'); ?>" title="Link to GJAC"><img id="mainLogoFooter" class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/GJAC2-Logo-Vector.jpg" width="52" height="52" />
+</a>
+<a class="navbar-brand-footer" href="<?php echo esc_url( home_url() ); ?>">Girls Junior Americas Cup</a>	
+</div> 
+</div>			
+<!-- begin footer menu -->
+
+    <nav class="footer-main">
+    <?php wp_nav_menu( array( 'theme_location' => 'Footer-menu' ) ); ?>
+    </nav>
+    </div> <!-- end footer menu -->
+
+				
+
+ <!-- end footer-content -->
+</footer> <!-- end footer -->
+<div class="container">
+<div id="site-info">
+<p>&copy;<?php echo date("Y"); ?> <a href="<?php get_site_url(); ?>"><?php bloginfo('name'); ?></a>. Built for the Girls Junior Americas Cup, Anna Atiagina, Victoria Moiseenko <span class="alignright">&nbsp;&nbsp;&nbsp;<?php wp_loginout(); ?></span></p>
+</div>
+</div>
+<!-- Start WP footer -->
+<?php wp_footer(); ?>
+<!-- Start WP footer -->
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
+      <!-- Begin Flex Slider -->
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.flexslider.js"></script>
+<!-- Begin Scripts -->
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/bootstrap-hover-dropdown.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/bootstrap-hover-dropdown.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.flexslider.js"></script>
+<!--<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>-->
+<!-- End Scripts -->
+
+<!-- Begin Flex Slider -->
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() { // enable function upon window load
+    $('.flexslider').flexslider({
+		animation: "fade",
+		slideshow: true,
+		smoothHeight: true
+	}); // call flexslider function
+  });
+</script>
+<!-- End Flex Slider -->
+	</body>
+</html>
+	
