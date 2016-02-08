@@ -33,19 +33,26 @@
 
 <!-- Begin HEADER -->
 <div id="header-conteiner">
-<div class="container">
+<div id="container" class="container">
 <div class="row">
 <div id="logo" class="col-lg-8 col-md-8 col-xs-12">
+<div class="left">
 <a href="<?php echo get_settings('home'); ?>" title="Link to Washinghton Junior Golf Association">
-<img id="mainLogo" class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/GJAC2-Logo-Vector.jpg" />
+<img id="mainLogo" class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/logowhitecircle.gif" />
 </a>
-<a class="navbar-brand-desktop" href="<?php echo esc_url( home_url() ); ?>">Girls Junior Americas Cup</a>
+</div> <!-- end .left -->
+<!--</div> --
+<div id="header-text" class="col-lg-5 col-md-6 col-xs-12"> -->
+<div class="right">
+<h2 class="header-text"><a class="navbar-brand-desktop" href="<?php echo esc_url( home_url() ); ?>">Girls Junior Americas Cup</a></h2>
+</div><!-- end .left -->
 </div><!-- end logo -->
 <div id="utilities-header" class="col-lg-4 col-md-4">
 <!-- Begin Social  Icon-->
 <div id="social-header" >
-<a href="#"><i class="fa fa-envelope-o fa-2x"></i></a>
-<a href="#" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+<a href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a>
+<a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+<a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
 </div> <!-- end social icon -->
 <!--<div id="link2">
 <ul>
@@ -65,7 +72,7 @@
 </div>	<!-- closed div .row -->
 </div>	<!-- closed div .container -->
 <!-- Begin new Navigation -->	
-<div id="navigation">	
+<!-- <div id="navigation">	-->
 <div class="navbar navbar-default navbar-static-top" role="navigation">
                        
                     <div class="container">
@@ -99,8 +106,8 @@
 	</div>
 	</div>
 	</div>
-</div> <!--end header -->
+<!-- </div> --end header -->
 	
 <!-- END MAIN NAVIGATION -->
-			
+<div id="main">			
  <div class="container">

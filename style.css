@@ -53,7 +53,7 @@ html {
 }
 
 body{
-	font-family: 'myriadPro', arial, sans-serif;
+	font-family: 'Helvetica', arial, sans-serif;
     height: 100%;
     margin: 0;
 }
@@ -249,16 +249,39 @@ img.attachment-post-thumbnail {
 /* END ATTACHMENT PAGE */
 
 /* HEADER STYLE */
+div#header-conteiner{
+	background-color: #057dbc;
+}
 #mainLogo{
-	width: 150px;
+	width: 265px;
+	float: left;
+	left: 0;
+	position: absolute
+}
+
+.header-text{
+	padding-top: 20px;
+}
+.right{
+	float: right;
+	width: 520px;
+	clear: both;
+}
+.left{
 	float: left;
 }
+#container{
+	position: relative;
+	height: 170px;
+}
 .navbar-brand-desktop{
-	font-family: "myriadPro", sans-serif;
-	font-size: 2.250em;
+	font-family: "Helvetica", sans-serif;
+	font-size: 1.8em;
 	text-transform: uppercase;
-	position: absolute;
+	/*position: absolute;*/
 	padding-top: 75px;
+	color: #ffffff;
+	font-weight: bold;
 }
 #utilities-header{
 	float: right;
@@ -268,24 +291,28 @@ img.attachment-post-thumbnail {
 #logo{
 	clear: both;
 	position: relative;
-	z-index: 10;
+	z-index: 10000;
 }
 #social-header{
 	float: right;
 	padding-top: 20px;
 }
 .searchform{
-	border: 1px solid black;
+	border: 1px solid #ffffff;
+	background-color: #ffffff;
 	height: 30px;
 	padding: 5px;
 }
 form#searchform.searchform input#s{
 	border: none;
 	width: 75%;
+	color: #0a678d;
 }
 form#searchform.searchform button.add-on{
 	border: none;
 	float: right;
+	background-color: #ffffff;
+	color: #0a678d;
 }
 #search{
 	float: right;
@@ -296,46 +323,32 @@ form#searchform.searchform button.add-on{
 }
 .fa-2x{
 	padding-left: 10px;
-	color: black;
+	color: #ffffff;
 }
 /* END HEADER STYLE  */
 
 /*  WIDGETS_ITEM */
 section.widgets-item{
-	background-color: aqua;
 	clear: both;
-	height: 220px;
+	color: #ffffff;
 }
 section.widgets-item h2{
 	font-size: 3em;
 	text-align: center;
+	color: #ffffff;
+	margin-top: 0;
 	text-transform: uppercase;
-	padding-top: 5px;
-	font-family: "myriadPro", "Helvetica", sans-serif;
+	font-family: "Helvetica", sans-serif;
 	line-height: 1.5em;
 }
-p.widgets-text{
-	font-size: 1.75em;
-	font-family: "myriadPro", "Helvetica", sans-serif;
-	line-height: 1em;
-	padding-right: 5px;
-	padding-left: 5px;
-	height: 80px;
-	text-align: center;
+section.widgets-item h2 a{
+	color: #fff;
 }
-a.button{
-	width: 125px;
-	margin: auto auto 15px;
-	float: right;
-	text-align: center;
-	padding: 2px 5px 10px;
-	border: medium none;
-	background-color: chartreuse;
-	font-family: "myriadPro", "Helvetica", sans-serif;
-	font-size: 1.45em;
-	margin-right: 10px;
+section.widgets-item h2 a:hover, a:focus{
+	color: #0a678d;
+	text-decoration: none;
+}
 
-}
 /*  END WIDGETS_ITEM */
 
 
@@ -344,7 +357,9 @@ a.button{
 	float: right;
 	border: 1px solid chartreuse;
 }
-
+#main {
+	background-color: #057dbc;
+}
 /*  END MAIN STYLE */
 
 
@@ -358,14 +373,14 @@ a.button{
 h2.primary{
 	text-transform: uppercase;
 	font-size: 2em;
-	font-family: "myriadPro", "Helvetica", sans-serif;
+	font-family: "Helvetica", sans-serif;
 
 }
 ul.sub-navigation-items{
 	list-style: none;
 	font-size: 1.6em;
 	padding: 10px;
-	font-family: "myriadPro", "Helvetica", sans-serif;
+	font-family: "Helvetica", sans-serif;
 
 }
 /*  END SIDEBAR */
@@ -376,9 +391,7 @@ ul.sub-navigation-items{
 
 /*  FOOTER */
 footer.row-footer{
-	clear: both;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	
 }
 #mainLogoFooter{
 	width: 80px;
@@ -390,10 +403,11 @@ footer.row-footer{
 	padding-top: 10px;
 }
 a.navbar-brand-footer{
-	font-size: 1.5em;
+	font-size: 24px;
+	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 1.2em;		
-	font-family: "myriadPro", "Helvetica", sans-serif;
+	font-family: "Helvetica", sans-serif;
 	float: left;
 	margin-top: 50px;
 
@@ -410,15 +424,16 @@ a.navbar-brand-footer{
 
 }
 nav.footer-main{
-	max-width: 800px;
+	max-width: 980px;
 	margin: 0px auto;
+	clear: both;
 	}
 #menu-footer ul li {
-	width: 125px;
+	width: 140px;
 	float: left;
 	list-style-type: none;	
-	margin-right: 8px;	
-	font-family: 'myriadPro', Arial, sans-serif;
+	margin-right: 20px;	
+	font-family: 'Helvetica', Arial, sans-serif;
 	font-size: 1em;
 	line-height:1.5em;
 	font-weight:normal;
@@ -426,8 +441,8 @@ nav.footer-main{
 	}
 #menu-footer li a {
 	font-size: 1.125em;
-	color: #E5AE00;
-	/*text-transform: uppercase;*/
+	color: black;
+	text-transform: uppercase;
 
 }
 #menu-footer ul li:last-child {
@@ -463,16 +478,17 @@ ul .sub-menu{
 #menu-footer ul.sub-menu li.current_page_item a {
 		color: #ddd;
 	}
-
+nav.footer-main div.menu-footer-menu-container ul#menu-footer-menu.menu a i.fa{
+	color: #000000;
+}
 /*  END FOOTER */
 
 
 /*  NAVIGATION */
-#navigation{
-	
-}
-.navbar-default{
-		background-color: #777999;
+.navbar-default.navbar {
+	background-color: #ffffff;
+	background-image: none;
+	margin-bottom: 0;
 }
  #navigation {
 	clear: both;
@@ -481,14 +497,46 @@ ul .sub-menu{
 	 /*margin-top: 15px; */
 }
 .navbar-nav > li{
-	margin-right: 6px;
+	margin-right: 22px;
 }
  div#main-menu-select{
-	float: right;
+	/*float: right;*/
+	 background-color: #ffffff;
+}
+.navbar-default .navbar-nav .nav > li > a {
+	color: #000000;
+	font-weight: bold;
+}
+.navbar-default .navbar-nav .nav ul.dropdown-menu > li > a {
+	color: #000000;
+	font-weight: bold;
+}
+.navbar-default .navbar-nav .nav ul.dropdown-menu > li > a:focus, .navbar-default .navbar-nav .nav ul.dropdown-menu > li > a:hover {
+	color: #ffffff;
+	background: #057dbc;
+	font-weight: bold;
+}
+.navbar-default .navbar-nav .nav > .active > a, .navbar-default .navbar-nav .nav > .open > a {
+	background: #057dbc;
+	color: #ffffff;
+}
+.navbar-default .navbar-nav .nav > li > a:focus, .navbar-default .navbar-nav .nav > li > a:hover {
+	background: #057dbc;
+	color: #ffffff;
+}
+.navbar-default .navbar-nav .nav > .open > a, .navbar-default .navbar-nav .nav > .open > a:focus, .navbar-default .navbar-nav .nav > .open > a:hover {
+	background: #057dbc;
+	color: #ffffff;
 }
 
-
-
+.dropdown-menu > li > a {
+	background: #ffffff;
+	font-weight: bold;
+}
+.navbar-default .navbar-nav .nav ul.dropdown-menu > li > a:focus, ul.dropdown-menu > li > a:hover {
+	background: #057dbc;
+	color: #ffffff;
+}
 /* END NAVIGATION */
 
 
@@ -497,7 +545,13 @@ ul .sub-menu{
 
 @media screen and (max-width: 850px) {
 	#mainLogo{
-		
+width: 30%;
+	}
+	.right{
+		width: 300px;
+	}
+	.navbar-brand-desktop{
+		font-size: 1em;
 	}
 	#navigation{
 		float: none;

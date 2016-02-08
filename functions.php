@@ -18,7 +18,7 @@ if ( function_exists( 'register_nav_menus' ) ) {
 	register_nav_menus(
 		array(
 		  'main-menu' => 'Main',
-		  'Footer-menu' => 'Footer-menu',
+		  'footer-menu' => 'Footer-menu',
 			'social-menu' => 'social-menu'
 		)
 	);
@@ -137,7 +137,7 @@ function add_flexslider() {
 			
         	echo $theImage;
 			echo '<blockquote class="home">'.$theBlockquote. '&nbsp;</blockquote>';
-			echo '<a href="'.$theLink.'"><button class="home">Find out more&nbsp;&raquo;</button></a>';
+			echo '<a href="'.$theLink.'"><p class="home">Learn more&nbsp;&raquo;</p></a>';
 			
 		}
 		
