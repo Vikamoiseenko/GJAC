@@ -107,7 +107,11 @@
 	</div>
 	</div>
 <!-- </div> --end header -->
-	
+<div id="wrapper">	
+<div id="breadcr" class="container">
+<?php if(function_exists('bavota_breadcrumbs')) bavota_breadcrumbs(); ?>
+</div>
+</div>	
 <!-- END MAIN NAVIGATION -->
 <div id="main">			
- <div class="container">
+<div class="container">

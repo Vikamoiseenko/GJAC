@@ -35,6 +35,5 @@
 </section>	
 </div>	
 </div><!-- end div.row -->
-</div> <!-- end container -->
-</div> <!-- end container -->
+
 <?php get_footer(); ?>

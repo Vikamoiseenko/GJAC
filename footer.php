@@ -1,3 +1,5 @@
+</div> <!-- end container -->
+</div> <!-- end container -->
 <!-- Begin site inform -->
 <footer class="row-footer">
 <div id="menu-footer" class="col-lg-12 col-md-12 col-xs-12">
@@ -9,17 +11,18 @@
 </div> 
 </div>			
 <!-- begin footer menu -->
-
+<div class="container">
     <nav class="footer-main">
     <?php wp_nav_menu( array( 'theme_location' => 'Footer-menu' ) ); ?>
     </nav>
+	</div>
     </div> <!-- end footer menu -->
 
 				
 
  <!-- end footer-content -->
 </footer> <!-- end footer -->
-<div class="container">
+<div id="info">
 <div id="site-info">
 <p>&copy;<?php echo date("Y"); ?> <a href="<?php get_site_url(); ?>"><?php bloginfo('name'); ?></a>. Built for the Girls Junior Americas Cup, Anna Atiagina, Victoria Moiseenko <span class="alignright">&nbsp;&nbsp;&nbsp;<?php wp_loginout(); ?></span></p>
 </div>

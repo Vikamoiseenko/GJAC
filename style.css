@@ -355,10 +355,25 @@ section.widgets-item h2 a:hover, a:focus{
 /*  MAIN STYLE */
 #content{
 	float: right;
-	border: 1px solid chartreuse;
+	background-color: #fff;
 }
 #main {
 	background-color: #057dbc;
+}
+div.breadcrumb {
+	background-color: #d2edf3;
+	margin: 0px auto;
+	clear: both;
+	overflow: hidden;
+	border-radius: 0;
+	height: 32px;
+}
+div.breadcrumb a {
+	color: #0a7dbc;
+	font-weight: bold;
+}
+#wrapper{
+	background-color: #0a7dbc;
 }
 /*  END MAIN STYLE */
 
@@ -368,20 +383,34 @@ section.widgets-item h2 a:hover, a:focus{
 /*  SIDEBAR */
 #primary{
 	float: left;
-	border: 1px solid magenta;
+	background-color: #d2edf3;
+	color: #000;
+	min-height: 620px;
+	border: 1px solid #d2edf3;
+	/*width: 220px;*/
 }
 h2.primary{
 	text-transform: uppercase;
 	font-size: 2em;
+	margin: 0px auto;
 	font-family: "Helvetica", sans-serif;
+	background-color: #fff;
 
+}
+h2.primary a{
+	padding-left: 20px;
+	color: #000;
 }
 ul.sub-navigation-items{
 	list-style: none;
-	font-size: 1.6em;
-	padding: 10px;
+	font-size: 1.4em;
+	padding: 5px;
+	color: #000;
 	font-family: "Helvetica", sans-serif;
 
+}
+ul.sub-navigation-items li a{
+	color: #000;
 }
 /*  END SIDEBAR */
 
@@ -391,7 +420,14 @@ ul.sub-navigation-items{
 
 /*  FOOTER */
 footer.row-footer{
-	
+	overflow: hidden;
+}
+div#site-info{
+	max-width: 980px;
+	margin: 0px auto;
+}
+div#site-info p a {
+	color: #fff;
 }
 #mainLogoFooter{
 	width: 80px;
@@ -420,19 +456,17 @@ a.navbar-brand-footer{
 	margin: 0 auto;
 	overflow:hidden;
 	clear: both;
-	border:1px solid #22050E;
-
 }
 nav.footer-main{
-	max-width: 980px;
 	margin: 0px auto;
 	clear: both;
+	overflow: hidden;
 	}
 #menu-footer ul li {
-	width: 140px;
+	width: 126px;
 	float: left;
 	list-style-type: none;	
-	margin-right: 20px;	
+	/*margin-right: 20px;*/	
 	font-family: 'Helvetica', Arial, sans-serif;
 	font-size: 1em;
 	line-height:1.5em;
@@ -447,14 +481,19 @@ nav.footer-main{
 }
 #menu-footer ul li:last-child {
 		margin-right: 0;
+	margin-bottom: 5px;
 	}
 	
 #menu-footer ul li a {
 	font-size: 1.3em;
-	line-height: 1.6875em;
 	font-weight:normal;
 }
-		
+#info{
+	clear: both;
+	background-color: #057dbc;
+	color: #fff;
+	height: 40px;
+}		
 #menu-footer ul.sub-menu li {
 line-height: 1em;
 font-weight:normal;
@@ -480,6 +519,8 @@ ul .sub-menu{
 	}
 nav.footer-main div.menu-footer-menu-container ul#menu-footer-menu.menu a i.fa{
 	color: #000000;
+	padding-left: 0;
+	padding-right: 10px;
 }
 /*  END FOOTER */
 

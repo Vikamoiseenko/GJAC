@@ -162,4 +162,26 @@ function add_flexslider() {
 	
 } // end add flexslide 
 add_shortcode( 'flexslider', 'add_flexslider' ); 
+
+
+function bavota_breadcrumbs() {
+	if(!is_page( 'home')) {
+		echo '<div class="breadcrumb">';
+		echo '<a href="'.home_url(' | ').'">'.get_bloginfo('name').'</a><span class="divider"> | </span>';
+		if (is_category() || is_single()) {
+			the_category(' <span class="divider"> | </span> ');
+			if (is_single()) {
+				echo ' <span class="divider"> | </span> ';
+				the_title();
+			}
+		} elseif (is_page()) {
+			echo the_title();
+		}
+		echo '</div>';
+	}
+}
+
+
+
+
 ?>
