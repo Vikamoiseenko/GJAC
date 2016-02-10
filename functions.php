@@ -24,6 +24,7 @@ if ( function_exists( 'register_nav_menus' ) ) {
 	);
 } 
 
+
 //create page excerpts
 add_post_type_support('page', 'excerpt');
 //
@@ -48,6 +49,19 @@ function my_register_sidebars() {
 		array(
 			'id' => 'secondary',
 			'name' => __( 'Secondary Sidebar' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<div class="row"><h3 class="widget-title">',
+			'after_title' => '</h3></div>'
+		)
+	);
+	
+	
+	/* Register the 'blog' sidebar. */
+	register_sidebar(
+		array(
+			'id' => 'blog',
+			'name' => __( 'Blog Sidebar' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget' => '</div>',
 			'before_title' => '<h3 class="widget-title">',
@@ -180,8 +194,6 @@ function bavota_breadcrumbs() {
 		echo '</div>';
 	}
 }
-
-
 
 
 ?>

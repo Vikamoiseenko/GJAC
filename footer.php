@@ -11,7 +11,7 @@
 </div> 
 </div>			
 <!-- begin footer menu -->
-<div class="container">
+<div class="col-lg-12 col-xs-12 col-sm-12">
     <nav class="footer-main">
     <?php wp_nav_menu( array( 'theme_location' => 'Footer-menu' ) ); ?>
     </nav>

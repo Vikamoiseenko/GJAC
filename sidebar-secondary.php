@@ -1,7 +1,7 @@
 <?php if ( is_active_sidebar( 'secondary' ) ) : ?> <!--START SIDEBAR SECONDARY-->  
 
 
-		<div id="secondary" class="sidebar">
+		<div id="secondary" class="col-lg-3 col-md-4 col-xs-12">
 
 		<?php dynamic_sidebar( 'secondary' ); ?>
 

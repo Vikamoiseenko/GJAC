@@ -356,6 +356,7 @@ section.widgets-item h2 a:hover, a:focus{
 #content{
 	float: right;
 	background-color: #fff;
+	margin-bottom: 20px;
 }
 #main {
 	background-color: #057dbc;
@@ -412,6 +413,48 @@ ul.sub-navigation-items{
 ul.sub-navigation-items li a{
 	color: #000;
 }
+.widget{
+	margin-bottom: 20px;
+}
+#secondary{
+	float: left;
+	background-color: #d2edf3;
+	color: #000;
+	min-height: 620px;
+	border: 1px solid #d2edf3;
+	/*width: 220px;*/
+}
+h3.widget-title{
+	text-transform: uppercase;
+	font-size: 2em;
+	padding-left: 20px;
+	margin: 0px auto;
+	font-family: "Helvetica", sans-serif;
+	background-color: #fff;
+
+}
+h3.widget-title a{
+	padding-left: 20px;
+	color: #000;
+}
+div#archives-3.widget.widget_archive ul{
+	list-style: outside none none;
+	line-height: 1.5em;
+	margin: 8px;
+	padding-bottom: 8px;
+}
+div#categories-2.widget.widget_categories ul{
+	line-height: 1.5em;
+    list-style: outside none none;
+    margin: 8px;
+    padding-bottom: 8px;
+}
+div.textwidget{
+	line-height: 1.5em;
+    list-style: outside none none;
+    margin: 8px;
+    padding-bottom: 8px;
+}
 /*  END SIDEBAR */
 
 
@@ -453,20 +496,19 @@ a.navbar-brand-footer{
 	clear: both;
 }
 #menu-footer{
-	margin: 0 auto;
-	overflow:hidden;
-	clear: both;
+	/*margin: 0 auto;
+	max-width: 980px;*/
+	
 }
 nav.footer-main{
-	margin: 0px auto;
-	clear: both;
-	overflow: hidden;
+	margin: 0 auto;
+	max-width: 980px;
 	}
 #menu-footer ul li {
-	width: 126px;
+	width: 140px;
 	float: left;
 	list-style-type: none;	
-	/*margin-right: 20px;*/	
+	margin-right: 50px;	
 	font-family: 'Helvetica', Arial, sans-serif;
 	font-size: 1em;
 	line-height:1.5em;
@@ -583,14 +625,33 @@ nav.footer-main div.menu-footer-menu-container ul#menu-footer-menu.menu a i.fa{
 
 /* MEDIA  */
 
-
+@media screen and (max-width: 1250px) {
+	#mainLogo{
+max-width: 100%;
+	}
+	.navbar-brand-desktop{
+		font-size: 1.5em;
+	}
+}
+@media screen and (max-width: 980px) {
+	#mainLogo{
+width: 30%;
+	}
+	#container{
+		height: auto;
+	}
+}
 @media screen and (max-width: 850px) {
 	#mainLogo{
 width: 30%;
 	}
-	.right{
-		width: 300px;
+	#container{
+		height: auto;
 	}
+	.right{
+		
+	}
+	
 	.navbar-brand-desktop{
 		font-size: 1em;
 	}
@@ -634,7 +695,11 @@ div#utilities-header {
 		padding-top: 15px;
 	}
 	#mainLogo{
-		width:30%;
+		left: 0;
+    margin: 2.6em auto;
+    max-width: 120px;
+    position: absolute;
+    right: 0;
 	}
 	.navbar-brand-footer{
 		float: none;

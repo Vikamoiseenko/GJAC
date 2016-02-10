@@ -47,7 +47,7 @@
 <h2 class="header-text"><a class="navbar-brand-desktop" href="<?php echo esc_url( home_url() ); ?>">Girls Junior Americas Cup</a></h2>
 </div><!-- end .left -->
 </div><!-- end logo -->
-<div id="utilities-header" class="col-lg-4 col-md-4">
+<div id="utilities-header" class="col-lg-4 col-md-4 col-xs-12">
 <!-- Begin Social  Icon-->
 <div id="social-header" >
 <a href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a>
