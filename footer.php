@@ -3,7 +3,7 @@
 <!-- Begin site inform -->
 <footer class="row-footer">
 <div id="menu-footer" class="col-lg-12 col-md-12 col-xs-12">
-<div class="col-lg-12 col-xs-12 col-sm-12">
+<div id="foot-logo" class="col-lg-12 col-xs-12 col-sm-12">
 <div id="logo-footer" >
 <a class="navbar-brand" href="<?php echo get_settings('home'); ?>" title="Link to GJAC"><img id="mainLogoFooter" class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/GJAC2-Logo-Vector.jpg" width="52" height="52" />
 </a>

@@ -5,9 +5,9 @@ Template Name: Sidebar
 ?>
 
 <?php get_header(); ?>
-<div id="main">                
+<div id="primary-group" class="col-lg-9 col-md-8 col-xs-12">                
 <!-- START CONTENT -->
-<div id="content" class="col-lg-6 col-md-8 col-xs-12">
+<div id="group-content" class="col-lg-8 col-md-8 col-xs-12">
     
 	<?php if (have_posts()) : ?>
 	<?php while (have_posts()) : the_post(); ?>
@@ -27,7 +27,7 @@ Template Name: Sidebar
 
 <!-- START SIDEBAR -->
 
-<?php get_sidebar( 'secondary' ); ?>
+<?php get_sidebar( 'captains' ); ?>
 </div><!-- END MAIN -->
 <?php get_sidebar( 'primary' ); ?>
 </div>

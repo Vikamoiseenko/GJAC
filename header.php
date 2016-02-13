@@ -35,7 +35,7 @@
 <div id="header-conteiner">
 <div id="container" class="container">
 <div class="row">
-<div id="logo" class="col-lg-8 col-md-8 col-xs-12">
+<div id="logo" class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 <div class="left">
 <a href="<?php echo get_settings('home'); ?>" title="Link to Washinghton Junior Golf Association">
 <img id="mainLogo" class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/logowhitecircle.gif" />
@@ -47,7 +47,7 @@
 <h2 class="header-text"><a class="navbar-brand-desktop" href="<?php echo esc_url( home_url() ); ?>">Girls Junior Americas Cup</a></h2>
 </div><!-- end .left -->
 </div><!-- end logo -->
-<div id="utilities-header" class="col-lg-4 col-md-4 col-xs-12">
+<div id="utilities-header" class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
 <!-- Begin Social  Icon-->
 <div id="social-header" >
 <a href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a>
@@ -62,7 +62,7 @@
 </div> <!-- end utiliti menu -->
 
 <!-- begin search form -->
-<div id="search" class="col-lg-4 col-md-4 col-xs-12">
+<div id="search" class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
 <form method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>/">
 <input type="text" value="<?php echo get_search_query(); ?>" placeholder="Search" name="s" id="s" />
 	<button type="submit" class="add-on"><i class="fa fa-search"></i></button>

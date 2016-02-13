@@ -42,7 +42,9 @@ a img {
 
 a {
 	text-decoration: none;
+	
 }
+
 
 /* GLOBAL TEXT STYLES */
 
@@ -283,9 +285,11 @@ div#header-conteiner{
 	color: #ffffff;
 	font-weight: bold;
 }
+
+
 #utilities-header{
 	float: right;
-	padding-top: 15px;
+	padding-top: 23px;
 	/*clear: both;*/
 }
 #logo{
@@ -316,10 +320,8 @@ form#searchform.searchform button.add-on{
 }
 #search{
 	float: right;
-    padding-top: 20px;
-	padding-bottom: 10px;
-	/*clear: both;*/
-	padding-left: 16%;
+    margin-top: -55px;
+	clear: both;
 }
 .fa-2x{
 	padding-left: 10px;
@@ -341,6 +343,10 @@ section.widgets-item h2{
 	font-family: "Helvetica", sans-serif;
 	line-height: 1.5em;
 }
+section.widgets-item a img.img-responsive{
+	width: 200px;
+	margin: 0px auto;
+}
 section.widgets-item h2 a{
 	color: #fff;
 }
@@ -360,6 +366,7 @@ section.widgets-item h2 a:hover, a:focus{
 }
 #main {
 	background-color: #057dbc;
+	padding-bottom: 20px;
 }
 div.breadcrumb {
 	background-color: #d2edf3;
@@ -387,13 +394,13 @@ div.breadcrumb a {
 	background-color: #d2edf3;
 	color: #000;
 	min-height: 620px;
-	border: 1px solid #d2edf3;
 	/*width: 220px;*/
 }
 h2.primary{
 	text-transform: uppercase;
-	font-size: 2em;
+	font-size: 1.8em;
 	margin: 0px auto;
+	padding-top: 5px;
 	font-family: "Helvetica", sans-serif;
 	background-color: #fff;
 
@@ -416,6 +423,23 @@ ul.sub-navigation-items li a{
 .widget{
 	margin-bottom: 20px;
 }
+#primary-group{
+	float: right;
+	padding-right: 0;
+	padding-left: 0;
+}
+#group-content{
+	background-color: #fff;
+	clear: both;
+}
+#captains{
+	float: right;
+	background-color: #d2edf3;
+	color: #000;
+	min-height: 620px;
+	/*width: 220px;*/
+}
+
 #secondary{
 	float: left;
 	background-color: #d2edf3;
@@ -429,6 +453,7 @@ h3.widget-title{
 	font-size: 2em;
 	padding-left: 20px;
 	margin: 0px auto;
+	padding-top: 5px;
 	font-family: "Helvetica", sans-serif;
 	background-color: #fff;
 
@@ -473,13 +498,16 @@ div#site-info p a {
 	color: #fff;
 }
 #mainLogoFooter{
-	width: 80px;
+	width: 50px;
 }
 #logo-footer{
-	margin: 0 auto 20px;
+	margin: 0 auto;
     width: 40%;
 	height: 90px;
 	padding-top: 10px;
+}
+#foot-logo{
+	border-bottom: 2px solid #057DBC;
 }
 a.navbar-brand-footer{
 	font-size: 24px;
@@ -488,7 +516,7 @@ a.navbar-brand-footer{
 	line-height: 1.2em;		
 	font-family: "Helvetica", sans-serif;
 	float: left;
-	margin-top: 50px;
+	margin-top: 25px;
 
 }
 #footer{
@@ -503,6 +531,7 @@ a.navbar-brand-footer{
 nav.footer-main{
 	margin: 0 auto;
 	max-width: 980px;
+	padding-bottom: 10px;
 	}
 #menu-footer ul li {
 	width: 140px;
@@ -627,19 +656,35 @@ nav.footer-main div.menu-footer-menu-container ul#menu-footer-menu.menu a i.fa{
 
 @media screen and (max-width: 1250px) {
 	#mainLogo{
-max-width: 100%;
+
 	}
+	
 	.navbar-brand-desktop{
 		font-size: 1.5em;
 	}
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1199px) {
+	.right{
+		width: 390px;
+	}
+	
+}
+@media screen and (max-width: 991px) {
 	#mainLogo{
-width: 30%;
+		width: 40%;
 	}
 	#container{
 		height: auto;
 	}
+	h2.header-text{
+		font-size: 22px;
+	}
+	.right{
+		width: 310px;
+	}
+}
+@media screen and (max-width: 982px) {
+	
 }
 @media screen and (max-width: 850px) {
 	#mainLogo{
@@ -648,9 +693,7 @@ width: 30%;
 	#container{
 		height: auto;
 	}
-	.right{
-		
-	}
+	
 	
 	.navbar-brand-desktop{
 		font-size: 1em;
@@ -666,7 +709,7 @@ width: 30%;
 }
 @media screen and (max-width: 600px) {
 div#utilities-header {		
-	display: none;
+	
 	}
 	section.widgets-item{
 		margin-bottom: 15px;

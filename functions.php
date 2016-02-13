@@ -56,6 +56,17 @@ function my_register_sidebars() {
 		)
 	);
 	
+	/* Register the 'secondary' sidebar. */
+	register_sidebar(
+		array(
+			'id' => 'captains',
+			'name' => __( 'Captains Sidebar' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<div class="row"><h3 class="widget-title">',
+			'after_title' => '</h3></div>'
+		)
+	);
 	
 	/* Register the 'blog' sidebar. */
 	register_sidebar(
