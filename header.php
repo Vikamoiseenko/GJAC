@@ -109,7 +109,7 @@
 <!-- </div> --end header -->
 <div id="wrapper">	
 <div id="breadcr" class="container">
-<?php if(function_exists('bavota_breadcrumbs')) bavota_breadcrumbs(); ?>
+<?php if(function_exists('breadcrumbs')) breadcrumbs(); ?>
 </div>
 </div>	
 <!-- END MAIN NAVIGATION -->

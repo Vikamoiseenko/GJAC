@@ -11,9 +11,6 @@ Template Name: Sidebar
     
 	<?php if (have_posts()) : ?>
 	<?php while (have_posts()) : the_post(); ?>
-
-		<h2><?php the_title(); ?></h2>
-        
 		<?php if ( has_post_thumbnail() ) {// check if the post has a Post Thumbnail assigned to it.
             the_post_thumbnail();
         } ?>
@@ -29,7 +26,11 @@ Template Name: Sidebar
 
 <?php get_sidebar( 'captains' ); ?>
 </div><!-- END MAIN -->
-<?php get_sidebar( 'primary' ); ?>
+<!-- Begin Dynamic Sidebar -->
+<div id="primary" class="col-lg-3 col-md-4 col-xs-12">
+    <?php dynamic_sidebar('main') ?>		
+</div>
+    <!-- End Dynamic Sidebar -->
 </div>
 <!-- END SIDEBAR -->
 

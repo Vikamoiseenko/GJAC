@@ -67,7 +67,17 @@ function my_register_sidebars() {
 			'after_title' => '</h3></div>'
 		)
 	);
-	
+	/* Register the 'secondary' sidebar. */
+	register_sidebar(
+		array(
+			'id' => 'main',
+			'name' => __( 'Main Sidebar' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<div class="row"><h3 class="widget-title">',
+			'after_title' => '</h3></div>'
+		)
+	);
 	/* Register the 'blog' sidebar. */
 	register_sidebar(
 		array(
@@ -189,22 +199,57 @@ function add_flexslider() {
 add_shortcode( 'flexslider', 'add_flexslider' ); 
 
 
-function bavota_breadcrumbs() {
-	if(!is_page( 'home')) {
-		echo '<div class="breadcrumb">';
-		echo '<a href="'.home_url(' | ').'">'.get_bloginfo('name').'</a><span class="divider"> | </span>';
-		if (is_category() || is_single()) {
-			the_category(' <span class="divider"> | </span> ');
-			if (is_single()) {
-				echo ' <span class="divider"> | </span> ';
-				the_title();
-			}
-		} elseif (is_page()) {
-			echo the_title();
-		}
-		echo '</div>';
-	}
-}
+//Enable Feauture images and post thumbnails
+add_theme_support('post-thumbnails');
+//
 
+//breadcrumbs without plugin
+function breadcrumbs() {
+	global $post;
+	$homelink = get_bloginfo('url');
+	$home = __('Home');	
+	
+	if(!is_page( 'home')) {
+		//display Home name with link
+		echo '<div class="breadcrumb">';
+		echo '<a href="' . $homelink .'">' . $home . '</a><span class="divider"> | </span>';
+		if (is_category() || is_single() || is_home() && get_option('page_for_posts')) {
+			//if category page, single page and page display name
+			$blog_page_id = get_option('page_for_posts');
+			echo get_page($blog_page_id)->post_title;
+			get_page(' <span class="divider"> | </span> ');
+			if( is_category()) {
+				//if category page display category name
+				echo ' <span class="divider"> | </span> ';
+				single_term_title();
+			}
+			elseif (is_single()) {
+				//if single page display only title
+				echo ' <span class="divider"> | </span> ';
+				echo the_title();
+			}
+		} elseif (is_page() && !$post->post_parent) {
+			//if page has no parent
+			echo get_the_title();
+		} elseif (is_page() && $post->post_parent) {
+			//if page has child page then display
+			$parent_id = $post->post_parent;
+			$page = get_page($parent_id);
+			echo get_page($page)->post_title;
+			echo ' <span class="divider"> | </span> ';
+			echo get_the_title() ;
+		}	
+	elseif (is_404()) {echo"<li>Error 404 "; echo'</li>';}
+	elseif (is_tag()) {single_tag_title();}
+    elseif (is_day()) {echo"<li>Archive for "; the_time('F jS, Y'); echo'</li>';}
+    elseif (is_month()) {echo"<li>Archive for "; the_time('F, Y'); echo'</li>';}
+    elseif (is_year()) {echo"<li>Archive for "; the_time('Y'); echo'</li>';}
+    elseif (is_author()) {echo"<li>Author Archive"; echo'</li>';}
+    elseif (isset($_GET['paged']) && !empty($_GET['paged'])) {echo "<li>Blog Archives"; echo'</li>';}
+    elseif (is_search()) {echo"<li>Search Results"; echo'</li>';}
+	echo '</div>';
+	echo '</div>';
+	}
+} //end breadcrumbs
 
 ?>

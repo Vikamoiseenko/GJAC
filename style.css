@@ -383,6 +383,10 @@ div.breadcrumb a {
 #wrapper{
 	background-color: #0a7dbc;
 }
+h3.title{
+	color: #0a678d;
+	font-size: 36px;
+}
 /*  END MAIN STYLE */
 
 
@@ -456,7 +460,11 @@ h3.widget-title{
 	padding-top: 5px;
 	font-family: "Helvetica", sans-serif;
 	background-color: #fff;
-
+}
+div#archives-2.widget.widget_archive ul {
+    line-height: 1.5em;
+    list-style: outside none none;
+	margin: 8px;
 }
 h3.widget-title a{
 	padding-left: 20px;
@@ -667,7 +675,6 @@ nav.footer-main div.menu-footer-menu-container ul#menu-footer-menu.menu a i.fa{
 	.right{
 		width: 390px;
 	}
-	
 }
 @media screen and (max-width: 991px) {
 	#mainLogo{
@@ -688,7 +695,7 @@ nav.footer-main div.menu-footer-menu-container ul#menu-footer-menu.menu a i.fa{
 }
 @media screen and (max-width: 850px) {
 	#mainLogo{
-width: 30%;
+	width: 30%;
 	}
 	#container{
 		height: auto;
