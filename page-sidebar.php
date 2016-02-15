@@ -27,9 +27,7 @@ Template Name: Sidebar
 <?php get_sidebar( 'captains' ); ?>
 </div><!-- END MAIN -->
 <!-- Begin Dynamic Sidebar -->
-<div id="primary" class="col-lg-3 col-md-4 col-xs-12">
-    <?php dynamic_sidebar('main') ?>		
-</div>
+<?php get_sidebar( 'primary' ); ?>
     <!-- End Dynamic Sidebar -->
 </div>
 <!-- END SIDEBAR -->

@@ -7,7 +7,7 @@
 	<article class="post-box" id="post-box-<?php the_ID(); ?>">
     <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?>&nbsp;&raquo;</a></h2>
     <p class="postdata">Posted on <?php the_time('M j, Y') ?> in <?php the_category(', ') ?></p>
-    <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_post_thumbnail(array(130,130)); ?></a>
+    <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_post_thumbnail($page->ID, 'thumbnail'); ?></a>
     <p class="read-more"><?php echo substr(get_the_excerpt(), 0,250); ?>...<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">Read more &raquo;</a></p>
     </article>
 <?php endwhile; ?>
@@ -18,6 +18,7 @@
 	</nav>
 </div><!-- END CONTENT -->
 <!-- START SECONDARY SIDEBAR -->
+
 <?php get_sidebar( 'secondary' ); ?>
 </div><!--END DIV MAIN-->
 

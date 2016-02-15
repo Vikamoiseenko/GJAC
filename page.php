@@ -16,10 +16,8 @@
 </div><!-- END CONTENT -->
 
 <!-- START SIDEBAR -->
-
+<!-- Begin Dynamic Sidebar -->				
 <?php get_sidebar( 'primary' ); ?>
-<!-- Begin Dynamic Sidebar -->
-<?php dynamic_sidebar('main') ?>					
 <!-- End Dynamic Sidebar -->
 </div>
 </div>

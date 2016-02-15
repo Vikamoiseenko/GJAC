@@ -21,15 +21,7 @@
  
     <?php } } ?>	
     <!-- End Sub Pages -->
-    
-    
-    
-    <!-- Begin Dynamic Mobile Sidebar -->
-    <?php wp_reset_query(); if (!(is_front_page())) : ?>    
-	<?php dynamic_sidebar('mobile') ?> 
-	<?php endif; ?>					
-    <!-- End Dynamic Mobile Sidebar -->
-    
+     
     <!-- Begin Dynamic Sidebar -->
     <?php dynamic_sidebar('main') ?>					
     <!-- End Dynamic Sidebar -->

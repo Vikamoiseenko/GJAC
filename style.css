@@ -375,6 +375,7 @@ div.breadcrumb {
 	overflow: hidden;
 	border-radius: 0;
 	height: 32px;
+	border: 0;
 }
 div.breadcrumb a {
 	color: #0a7dbc;
@@ -406,12 +407,14 @@ h2.primary{
 	margin: 0px auto;
 	padding-top: 5px;
 	font-family: "Helvetica", sans-serif;
-	background-color: #fff;
+	/*background-color: #fff;*/
+	color: #ffffff;
+	background-color: #0a7dbc;
 
 }
 h2.primary a{
 	padding-left: 20px;
-	color: #000;
+	color: #fff;
 }
 ul.sub-navigation-items{
 	list-style: none;
@@ -449,22 +452,28 @@ ul.sub-navigation-items li a{
 	background-color: #d2edf3;
 	color: #000;
 	min-height: 620px;
-	border: 1px solid #d2edf3;
 	/*width: 220px;*/
 }
 h3.widget-title{
 	text-transform: uppercase;
-	font-size: 2em;
+	font-size: 1.5em;
 	padding-left: 20px;
 	margin: 0px auto;
 	padding-top: 5px;
 	font-family: "Helvetica", sans-serif;
-	background-color: #fff;
+	color: #ffffff;
+	background-color: #0a7dbc;
+	font-weight: bold;
 }
 div#archives-2.widget.widget_archive ul {
     line-height: 1.5em;
     list-style: outside none none;
 	margin: 8px;
+}
+div#archives-2.widget.widget_archive ul a{
+	color: #000;
+	font-size: 1.3em;
+	line-height: 1.5em;
 }
 h3.widget-title a{
 	padding-left: 20px;
@@ -487,6 +496,22 @@ div.textwidget{
     list-style: outside none none;
     margin: 8px;
     padding-bottom: 8px;
+}
+div.textwidget a{
+	font-size: 1.3em;
+	line-height: 1.5em;
+	color: #000;
+	
+}
+#secondary #archives-3.widget.widget_archive ul li a{
+	color: #000;
+	font-size: 1.3em;
+	line-height: 1.5em;
+}
+#secondary #categories-2.widget.widget_categories ul li a{
+	color: #000;
+	font-size: 1.3em;
+	line-height: 1.5em;
 }
 /*  END SIDEBAR */
 
@@ -609,6 +634,7 @@ nav.footer-main div.menu-footer-menu-container ul#menu-footer-menu.menu a i.fa{
 	background-color: #ffffff;
 	background-image: none;
 	margin-bottom: 0;
+	border: 0px;
 }
  #navigation {
 	clear: both;

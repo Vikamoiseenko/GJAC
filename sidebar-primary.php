@@ -20,4 +20,6 @@
     ?></ul>
     <?php endif; // end if we are in "pages" ?>
     
-    
+    <!-- Begin Dynamic Sidebar -->
+    <?php dynamic_sidebar('main') ?>					
+    <!-- End Dynamic Sidebar -->
