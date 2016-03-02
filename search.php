@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- Begin Content -->
-<div id="content">
+<div id="content" class="col-lg-9 col-md-8 col-xs-12">
     
     <article id="page-content-<?php the_ID(); ?>" class="page-content">    
     <h2>Search Results:</h2>
@@ -30,6 +30,6 @@
     
 </div>
 <!-- End Content -->
-<?php get_sidebar( 'secondary' ); ?>
-
+<?php get_sidebar( 'primary' ); ?>
+</div>
 <?php get_footer(); ?>

@@ -94,7 +94,7 @@ height: auto;
     color: #000000;
 	font-family: "Helvetica", sans-serif;
     /*font-size: 1.6em;*/
-    height: 21%;
+    /*height: 21%;*/
     /*line-height: 1.5em;*/
     padding: 15px;
     position: absolute;
@@ -113,7 +113,7 @@ height: auto;
     font-size: 1.25em;
     line-height: 1.5em;
     position: absolute;
-    right: 414px;
+    right: 30px;
     text-align: left;
     z-index: 3;
 }
@@ -211,6 +211,8 @@ div.flexslider p.home {
 div.flexslider p.home {
 
      width:100%;
+	background-color: #fff;
+	color: #057dbc;
 
 }
 body.home .flexslider img {

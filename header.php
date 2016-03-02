@@ -32,27 +32,30 @@
 <body <?php body_class(); ?>>
 
 <!-- Begin HEADER -->
-<div id="header-conteiner">
+<div id="header-container">
 <div id="container" class="container">
 <div class="row">
-<div id="logo" class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-<div class="left">
+<div id="logo" class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
+<div id="left" class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 <a href="<?php echo get_settings('home'); ?>" title="Link to Washinghton Junior Golf Association">
-<img id="mainLogo" class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/logowhitecircle.gif" />
+<img id="mainLogo" class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/logo0228.gif" />
 </a>
 </div> <!-- end .left -->
 <!--</div> --
 <div id="header-text" class="col-lg-5 col-md-6 col-xs-12"> -->
-<div class="right">
-<h2 class="header-text"><a class="navbar-brand-desktop" href="<?php echo esc_url( home_url() ); ?>">Girls Junior Americas Cup</a></h2>
+<div id="right" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+<h2 class="header-text"><a id="blah" class="navbar-brand-desktop" href="<?php echo esc_url( home_url() ); ?>">Girls Junior Americas Cup</a></h2>
 </div><!-- end .left -->
-</div><!-- end logo -->
-<div id="utilities-header" class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+</div><!-- end logo -->	
+<div id="name" class="col-lg-4 col-md-4 col-sm-5 col-xs-12">	
+	<div class="row">
+<div id="utilities-header" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
 <!-- Begin Social  Icon-->
 <div id="social-header" >
 <a href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a>
 <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
 <a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+<a href="#" target="_blank"><i class="fa fa-flickr fa-2x"></i></a>
 </div> <!-- end social icon -->
 <!--<div id="link2">
 <ul>
@@ -60,15 +63,16 @@
 </ul>
 </div>-->
 </div> <!-- end utiliti menu -->
-
 <!-- begin search form -->
-<div id="search" class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+<div id="search" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
 <form method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>/">
 <input type="text" value="<?php echo get_search_query(); ?>" placeholder="Search" name="s" id="s" />
 	<button type="submit" class="add-on"><i class="fa fa-search"></i></button>
 <!-- <input type="submit" id="searchsubmit" value="" /> -->
 </form> <!-- end search form -->
-</div>		
+</div>	
+</div>
+	</div>
 </div>	<!-- closed div .row -->
 </div>	<!-- closed div .container -->
 <!-- Begin new Navigation -->	

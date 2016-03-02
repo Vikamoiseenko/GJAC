@@ -67,6 +67,17 @@ function my_register_sidebars() {
 			'after_title' => '</h3></div>'
 		)
 	);
+	/* Register the 'new' sidebar. */
+	register_sidebar(
+		array(
+			'id' => 'new',
+			'name' => __( 'New Sidebar' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<div class="row"><h3 class="widget-title">',
+			'after_title' => '</h3></div>'
+		)
+	);
 	/* Register the 'secondary' sidebar. */
 	register_sidebar(
 		array(
@@ -216,7 +227,10 @@ function breadcrumbs() {
 		if (is_category() || is_single() || is_home() && get_option('page_for_posts')) {
 			//if category page, single page and page display name
 			$blog_page_id = get_option('page_for_posts');
-			echo get_page($blog_page_id)->post_title;
+			$page_title = get_page($blog_page_id)->post_title;
+			$page_url = get_permalink( $blog_page_id);
+			echo '<a href="' . $page_url . '">' . $page_title . '</a>';
+			//echo get_page($blog_page_id)->post_title;
 			get_page(' <span class="divider"> | </span> ');
 			if( is_category()) {
 				//if category page display category name
@@ -235,10 +249,14 @@ function breadcrumbs() {
 			//if page has child page then display
 			$parent_id = $post->post_parent;
 			$page = get_page($parent_id);
-			echo get_page($page)->post_title;
+			$page_title = get_page($page)->post_title;
+			$page_url = get_permalink( $page);
+			echo '<a href="' . $page_url . '">' . $page_title . '</a>';
+			//echo get_page($page)->post_title;
 			echo ' <span class="divider"> | </span> ';
-			echo get_the_title() ;
-		}	
+			echo get_the_title() ;		
+		}
+		
 	elseif (is_404()) {echo"<li>Error 404 "; echo'</li>';}
 	elseif (is_tag()) {single_tag_title();}
     elseif (is_day()) {echo"<li>Archive for "; the_time('F jS, Y'); echo'</li>';}

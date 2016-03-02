@@ -12,7 +12,7 @@ Template Name: No Menu
 	<?php if (have_posts()) : ?>
 	<?php while (have_posts()) : the_post(); ?>
 
-		<h2><?php the_title(); ?></h2>
+		<h3><?php the_title(); ?></h3>
         
 		<?php if ( has_post_thumbnail() ) {// check if the post has a Post Thumbnail assigned to it.
             the_post_thumbnail();

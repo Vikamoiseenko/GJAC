@@ -23,7 +23,7 @@
 <a href="" title="Link to GJAC2016">
 <img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/iconcup400px.gif" />
 </a>	
-<h2><a href="">GTAC 2016</a></h2>
+<h2><a href="">GJAC 2016</a></h2>
 </section>	
 </div>	
 <div class="col-lg-3 col-md-6 col-xs-6">

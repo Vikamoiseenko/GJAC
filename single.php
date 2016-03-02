@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-      <div id="content" class="col-lg-9 col-md-6 col-xs-12">
+      <div id="content" class="col-lg-9 col-md-9 col-xs-12">
 <!-- START CONTENT -->
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
