@@ -10,8 +10,9 @@
 <!-- end meta -->
 
 <!--Favicon -->
-
-
+<link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_directory'); ?>/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_directory'); ?>/images/favicon-16x16.png">
+<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" type="image/x-icon">	
 <!--Favicon -->
 
 <!-- begin style -->
@@ -24,7 +25,6 @@
 <link href="<?php bloginfo('template_url'); ?>/css/bootstrap-social.css" rel="stylesheet">
 
 <!-- end style -->
-
 <!-- Start WP head -->
 <?php wp_head(); ?>
 <!-- End wp head -->

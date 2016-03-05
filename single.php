@@ -15,7 +15,6 @@
         <span class="post-navigation-next"><?php next_post('% &raquo; ','', 'yes'); ?></span>
     </nav>   
 </article>
-<?php comments_template(); ?>
 <?php endwhile; ?>
 <?php endif; ?>
 </div>

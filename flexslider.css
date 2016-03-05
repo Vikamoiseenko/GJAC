@@ -138,7 +138,7 @@ height: auto;
 	}
 			
 	div.flexslider a:hover p  {
-		color: #FFF;
+		color: #23527c;
 	}
 	
 #content div.flexslider ul { 
@@ -222,7 +222,9 @@ body.home .flexslider img {
 		color: #A7181D; /* DARK RED */
 		text-shadow: none;
 	}
-		
+	p.text {
+		margin-bottom: 5px;
+	}		
 	
 	
 }

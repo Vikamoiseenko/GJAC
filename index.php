@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- START CONTENT -->
-<div id="content" class="col-lg-9 col-md-8 col-xs-12">
+<div id="content" class="col-lg-9 col-md-9 col-xs-12">
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
 	<article class="post-box" id="post-box-<?php the_ID(); ?>">
@@ -22,6 +22,6 @@
 <?php get_sidebar( 'secondary' ); ?>
 </div><!--END DIV MAIN-->
     <!-- End Dynamic Sidebar -->
-<small>index.php</small>
+<!-- <small>index.php</small> -->
 
 <?php get_footer(); ?>

@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /* CSS Document */
 /*
-Theme Name: Girls' Junior Americas Cup
+Theme Name: Girls Junior Americas Cup
 Author: 
 Anna Atiagina,
 MOISEENKO, VICTORIA
 Author URI: http://www.gjac.org/
-Description: Theme for Girls' Junior Americas Cup
+Description: Theme for Girls Junior Americas Cup
 Version: 1.0
 */
 
@@ -439,8 +439,9 @@ h3 #headline {
   text-decoration: none;
 }
 
-.wpcf7-form-control {
+textarea.wpcf7-form-control, input.wpcf7-form-control.wpcf7-text {
     border: #d2edf3 2px solid;
+	width: 100%
 }
 /*  END MAIN STYLE */
 
@@ -461,14 +462,14 @@ h2.primary{
 	font-weight: bold;
 	margin: 0px auto;
 	padding-top: 5px;
+	padding-left: 20px;
 	font-family: "Helvetica", sans-serif;
 	/*background-color: #fff;*/
 	color: #ffffff;
 	background-color: #0a7dbc;
 
 }
-h2.primary a{
-	padding-left: 20px;
+h2.primary a {
 	color: #fff;
 }
 ul.sub-navigation-items{
@@ -870,7 +871,7 @@ margin: 20px;
 		height: auto;
 	}
 h2.header-text{
-		font-size: 22px;
+		font-size: 19px;
 	}
 	
     .nav .navbar-nav li {
@@ -881,7 +882,9 @@ h2.header-text{
     padding: 15px 5px;
         font-size: 12px;
     }
-    
+    #search {
+		margin-top: 10px;
+	}
     
 }
 @media screen and (max-width: 982px) {

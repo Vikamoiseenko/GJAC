@@ -6,7 +6,7 @@
 <div id="foot-logo" class="col-lg-12 col-xs-12 col-sm-12">
 <div id="logo-footer" class="row">
 <div class="col-lg-2 col-md-2 col-xs-2">
-<a class="navbar-brand" href="<?php echo get_settings('home'); ?>" title="Link to GJAC"><img id="mainLogoFooter" class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/GJAC2-Logo-Vector.jpg" width="52" height="52" />
+<a class="navbar-brand" href="<?php echo get_settings('home'); ?>" title="Link to GJAC"><img id="mainLogoFooter" class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/logo0228.gif" width="52" height="52" />
 </a>
 	</div>
 <div class="col-lg-10 col-md-10 col-xs-10">
@@ -27,7 +27,7 @@
 </footer> <!-- end footer -->
 <div id="info">
 <div id="site-info">
-<p>&copy;<?php echo date("Y"); ?> <a href="<?php get_site_url(); ?>"><?php bloginfo('name'); ?></a>. Built for the Girls Junior Americas Cup, Anna Atiagina, Victoria Moiseenko <span class="alignright">&nbsp;&nbsp;&nbsp;<?php wp_loginout(); ?></span></p>
+<p>&copy;<?php echo date("Y"); ?> <a href="<?php get_site_url(); ?>"><?php bloginfo('name'); ?></a>. Built for the Girls Junior Americas Cup, Anna Atiagina, Victoria Moiseenko <span class="login">&nbsp;&nbsp;&nbsp;<?php wp_loginout(); ?></span></p>
 </div>
 </div>
 <!-- Start WP footer -->
@@ -37,6 +37,7 @@
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>

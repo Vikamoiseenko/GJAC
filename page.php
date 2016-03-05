@@ -24,5 +24,5 @@
 </div>
 </div>
 <!-- END SIDEBAR -->
-<small>page.php</small>
+<!-- <small>page.php</small> -->
 <?php get_footer(); ?>
