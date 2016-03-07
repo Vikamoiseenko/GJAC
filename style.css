@@ -632,7 +632,6 @@ footer.row-footer{
 	overflow: hidden;
 }
 div#site-info{
-	max-width: 980px;
 	margin: 0px auto;
 }
 div#site-info p a {
@@ -645,10 +644,10 @@ div#site-info p a {
 	margin: 0 auto;
     width: 500px;
 	height: 90px;
-	padding-top: 10px;
 }
 #foot-logo{
 	border-bottom: 2px solid #057DBC;
+	margin-bottom: 10px;
 }
 a.navbar-brand-footer {
 	font-size: 24px;
@@ -677,10 +676,10 @@ nav.footer-main{
 	padding-bottom: 10px;
 	}
 #menu-footer ul li {
-	width: 140px;
+	width: 110px;
 	float: left;
 	list-style-type: none;	
-	margin-right: 50px;	
+	margin-right: 20px;	
 	font-family: 'Helvetica', Arial, sans-serif;
 	font-size: 1em;
 	line-height:1.5em;
@@ -736,7 +735,6 @@ nav.footer-main div.menu-footer-menu-container ul#menu-footer-menu.menu a i.fa{
 	padding-right: 10px;
 }
 ul#menu-footer-menu.menu {
-	margin-left: 0;
 }
 /*  END FOOTER */
 
@@ -992,7 +990,6 @@ h2.header-text{
 }
 	.caret-border {
   width: 10%;
-  border: 1px solid #86B231;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1004,6 +1001,7 @@ h2.header-text{
 }
 .mobile-dropdown-caret.caret{
 		margin-top: 18px;
+	margin-right: 20px;
 	}
 ul#menu-footer-menu .caret.mobile-dropdown-caret {
 		display: none;

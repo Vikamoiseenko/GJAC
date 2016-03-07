@@ -15,12 +15,12 @@
 </div> 
 </div>			
 <!-- begin footer menu -->
-<div class="col-lg-12 col-xs-12 col-sm-12">
-	<div class="container">
+<div class="container">
+<div class="row">
     <nav class="footer-main">
     <?php wp_nav_menu( array( 'theme_location' => 'Footer-menu' ) ); ?>
     </nav>
-		</div>
+	</div>
 	</div>
     </div> <!-- end footer menu -->
  <!-- end footer-content -->
