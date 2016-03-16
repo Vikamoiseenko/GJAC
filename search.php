@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- Begin Content -->
-<div id="content" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+<div id="content" class="col-lg-9 col-md-9 col-xs-12">
     
     <article id="page-content-<?php the_ID(); ?>" class="page-content">    
     <h2>Search Results:</h2>

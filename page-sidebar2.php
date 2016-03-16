@@ -8,7 +8,7 @@ Template Name: Sidebar2
 
 <div id="primary-group" class="">                
 <!-- START CONTENT -->
-<div id="group-content" class="col-lg-6 col-lg-pull-3 col-md-6 col-md-pull-3 col-sm-6 col-sm-pull-3 col-xs-12">
+<div id="group-content" class="col-lg-6 col-lg-pull-3 col-md-6 col-md-pull-3 col-xs-12">
     
 	<?php if (have_posts()) : ?>
 	<?php while (have_posts()) : the_post(); ?>

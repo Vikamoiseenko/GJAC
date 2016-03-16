@@ -1,4 +1,4 @@
-<div id="primary" class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><!--START SIDEBAR PRIMARY-->
+<div id="primary" class="col-lg-3 col-md-3 col-xs-12"><!--START SIDEBAR PRIMARY-->
  <!-- Begin Sub-Navigation -->
 	<?php if (is_page()) : // if we are in "pages"... ?>
     <div class="row">

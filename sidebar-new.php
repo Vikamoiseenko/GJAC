@@ -1,7 +1,7 @@
 <?php if ( is_active_sidebar( 'new' ) ) : ?> <!--START SIDEBAR captains-->  
 
 
-		<div id="new" class="col-lg-3 col-lg-push-6 col-md-3 col-md-push-6 col-sm-3 col-sm-push-6 col-xs-12">
+		<div id="new" class="col-lg-3 col-lg-push-6 col-md-3 col-md-push-6 col-xs-12">
 
 		<?php dynamic_sidebar( 'new' ); ?>
 
