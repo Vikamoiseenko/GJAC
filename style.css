@@ -1076,6 +1076,11 @@ ul#menu-footer-menu .caret-border {
 		margin: 0px auto;
 	}
 }
+@media screen and (max-width: 660px) {
+#menu-footer ul li:last-child{
+margin-right: 10px;
+}
+}
 @media screen and (max-width: 600px) {
 div#utilities-header {		
 	
@@ -1129,6 +1134,9 @@ div#utilities-header {
 	#info{
 		height: auto;
 	}
+	#menu-footer ul li:last-child{
+	margin-right: 10px;
+	}
 }
 @media screen and (max-width: 660px) {
 	h2.header-text{
@@ -1138,6 +1146,10 @@ div#utilities-header {
 	#mainLogo{
 		width: 35%;
 	}
+	#new {
+		min-height: auto;
+	}
+	
 }
 @media screen and (max-width: 480px) {
 	a.navbar-brand-footer{
@@ -1145,13 +1157,21 @@ div#utilities-header {
 		margin-top: 25px;
 		text-align: center;
 	}
+	#new {
+		min-height: auto;
+	}
 }
 @media screen and (max-width: 350px) {
 	h2.header-text{
 		font-size: 18px;
 	}
+	#new {
+		min-height: auto;
+	}
 }
 
 @media screen and (max-width: 450px) {
-	
+	#new {
+		min-height: auto;
+	}
 }

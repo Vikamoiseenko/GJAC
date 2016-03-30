@@ -4,34 +4,34 @@
 <div class="row row-content">
 <div class="col-lg-3 col-md-6 col-xs-6">
 <section class="widgets-item">
-<a href="" title="Link to Captains">
+<a href="/team-captains/" title="Link to Captains">
 <img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/icongirl400px.gif" />
 </a>
-<h2><a href="">Captains</a></h2>
+<h2><a href="/team-captains/">Captains</a></h2>
 </section>	
 </div>	
 <div class="col-lg-3 col-md-6 col-xs-6">
 <section class="widgets-item">
-<a href="" title="Link to Coaches">
+<a href="/college-coaches/" title="Link to Coaches">
 <img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/iconcoach400px.gif" />
 </a>
-<h2><a href="">Coaches</a></h2>
+<h2><a href="/college-coaches/">Coaches</a></h2>
 </section>	
 </div>	
 <div class="col-lg-3 col-md-6 col-xs-6">
 <section class="widgets-item">
-<a href="" title="Link to GJAC2016">
+<a href="/gjac-2016/" title="Link to GJAC2016">
 <img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/iconcup400px.gif" />
 </a>	
-<h2><a href="">GJAC 2016</a></h2>
+<h2><a href="/gjac-2016/">Current GJAC</a></h2>
 </section>	
 </div>	
 <div class="col-lg-3 col-md-6 col-xs-6">
 <section class="widgets-item">
-<a href="" title="Link to Press">
+<a href="/press/" title="Link to Press">
 <img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/iconpress400px.gif" />
 </a>		
-<h2><a href="">PRESS</a></h2>
+<h2><a href="/press/">PRESS</a></h2>
 </section>	
 </div>	
 </div><!-- end div.row -->

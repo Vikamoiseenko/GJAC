@@ -52,7 +52,7 @@
 <div id="utilities-header" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
 <!-- Begin Social  Icon-->
 <div id="social-header" >
-<a href="#" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a>
+<a href="mailto:wjgaoffice@aol.com" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a>
 <a href="https://www.facebook.com/gjac.org/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
 <a href="https://twitter.com/gjacgolf" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
 <a href="https://www.flickr.com/photos/125970159@N03/albums" target="_blank"><i class="fa fa-flickr fa-2x"></i></a>

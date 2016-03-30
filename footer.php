@@ -27,7 +27,7 @@
 </footer> <!-- end footer -->
 <div id="info">
 <div id="site-info">
-<p>&copy;<?php echo date("Y"); ?> <a href="<?php get_site_url(); ?>"><?php bloginfo('name'); ?></a>. Built for the Girls Junior Americas Cup, Anna Atiagina, Victoria Moiseenko <span class="login">&nbsp;&nbsp;&nbsp;<?php wp_loginout(); ?></span></p>
+    <p>&copy;<?php echo date("Y"); ?> <a href="<?php get_site_url(); ?>"><?php bloginfo('name'); ?></a>. Built for the Girls Junior Americas Cup, <a href="http://atiagina.com/" target="_blank">Anna Atiagina</a>, <a href="http://mykhabarovsk.com/" target="_blank">Victoria Moiseenko</a> <span class="login">&nbsp;&nbsp;&nbsp;<?php wp_loginout(); ?></span></p>
 </div>
 </div>
 <!-- Start WP footer -->
