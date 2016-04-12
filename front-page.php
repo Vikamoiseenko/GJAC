@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!-- Begin flexslider -->
 <?php add_flexslider(); ?>
-<div class="row row-content">
+<div class="row-content">
 <div class="col-lg-3 col-md-6 col-xs-6">
 <section class="widgets-item">
 <a href="/team-captains/" title="Link to Captains">
